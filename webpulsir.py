@@ -40,7 +40,7 @@ class WebPulsIR(object):
         return "Result from WebPulse:\n\n" + parsedsubmission['message']
 
 
-def main(url,review,submit):
+def main(url,review=False,submit=False):
     if review == True and submit == True:
         wpobj = WebPulsIR()
         print wpobj.reviewurl(url)
